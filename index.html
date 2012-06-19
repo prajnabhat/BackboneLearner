@@ -3,10 +3,15 @@
 <title> Customer</title>
 </head>
 <body>
-<div id='contacts'></div>
+<div id='contacts'>
+<form id="addContact" action='#'>
+<label for="name"> Name : </label><input id="name"/>
+<label for="age"> Age : </label> <input id="age"/>
+<button id="add"> ADD </button>
+</div>
 <script id="contactTemplate" type="text/template">
-            <h1><%= name %></h1>
-            <div><%= age %></div>
+            <h1><%= name %> <%=age%></h1>
+         
           
 </script>
         <script src="js/jquery-1.7.1.min.js"></script>

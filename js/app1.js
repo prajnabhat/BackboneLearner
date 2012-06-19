@@ -16,8 +16,8 @@ model : Contact
 });
 
 var ContactView = Backbone.View.extend({
-tagname : "article",
-className : "contact-container",
+//tagname : "article",
+//className : "contact-container",
 template : $("#contactTemplate").html(),
 
 render : function(){
