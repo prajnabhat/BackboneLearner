@@ -1,8 +1,8 @@
 (function($){
 var contacts = [
-{ name : "Prajna", age: 21  },
-{ name : "Sreechand", age : 23 },
-{ name : "Harsha", age : 20}
+{ name : "PB", age: 21  },
+{ name : "SC", age : 23 },
+{ name : "HVD", age : 20}
 ];
 
 //Creating a model "Contact" with a default value for Company
