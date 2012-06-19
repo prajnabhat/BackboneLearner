@@ -1,23 +1,24 @@
 <html>
 <head>
-<title> Customer</title>
+	<title> Customer</title>
 </head>
 <body>
-<div id='contacts'>
-<form id="addContact" action='#'>
-<label for="name"> Name : </label><input id="name"/>
-<label for="age"> Age : </label> <input id="age"/>
-<button id="add"> ADD </button>
-</div>
-<script id="contactTemplate" type="text/template">
-            <div style="border:1px solid black; width:200px;height:100px; padding:5px;margin:10px;">
-			<h1><%=name%> </h1>
-			<h3><%=age%><%=Company%> </h3>
-			</div>
-</script>
-        <script src="js/jquery-1.7.1.min.js"></script>
-        <script src="js/underscore-min.js"></script>
-        <script src="js/backbone-min.js"></script>
-        <script src="js/app1.js"></script> 
-</body>
+	<div='contacts'>
+		<form id="addContact" action='#'>
+			<label for="name"> Name : </label><input id="name"/>
+			<label for="age"> Age : </label> <input id="age"/>
+			<button id="add"> ADD </button>
+		</form>
+	</div>
+	<script id="contactTemplate" type="text/template">
+				<div style="border:1px solid black; width:200px;height:100px; padding:5px;margin:10px;">
+					<h1><%=name%> </h1>
+					<h3><%=age%><%=Company%> </h3>
+				</div>
+	</script>
+			<script src="js/jquery-1.7.1.min.js"></script>
+			<script src="js/underscore-min.js"></script>
+			<script src="js/backbone-min.js"></script>
+			<script src="js/app1.js"></script> 
+	</body>
 </html>

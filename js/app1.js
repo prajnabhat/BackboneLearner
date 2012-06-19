@@ -35,6 +35,7 @@ el : $("#contacts"),
 initialize : function(){
 	this.collection = new List(contacts);
 	this.render();
+	this.collection.on("add", this.renderContact, this);
 },
 render: function () {
         var that = this;
@@ -47,7 +48,27 @@ renderContact : function(item) {
 	var contactView = new ContactView({
 	model : item });
 	this.$el.append(contactView.render().el);
-}
+},
+
+events : {
+	"click #add" : "addContact"
+},
+
+addContact: function (e) {
+            e.preventDefault();
+
+            var formData = {};
+            $("#addContact").children("input").each(function (i, el) {
+                if ($(el).val() !== "") {
+                    formData[el.id] = $(el).val();
+                }
+            });
+
+            contacts.push(formData);
+         
+                this.collection.add(new Contact(formData));
+        }
+
 
 });
 var list = new ListView();
